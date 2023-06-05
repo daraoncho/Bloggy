@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-font-stack: "Montserrat", sans-serif;
+  --main-bg-color: #f5f3ff;
+  --blog-title-color: #3b82f6;
+  --category-color: #a5b4fc;
+  --search-btn-color: #0f52ba;
+  --cat-list-color: linear-gradient(90deg, #6190e8, #a7bfe8);
+  --footer-bg-color: #faf5ff;
+}
+
+.dark-theme {
+  --body-font-stack: "Montserrat", sans-serif;
+  --main-bg-color: #040000;
+  --blog-title-color: #fff;
+  --category-color: #a5b4fc;
+  --search-btn-color: #0f52ba;
+  --cat-list-color: linear-gradient(90deg, #6190e8, #a7bfe8);
+  --footer-bg-color: #040000;
+  --text-color: #fff;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--body-font-stack);
+}
+
+main .container {
+  max-width: 1536px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.contain {
+  margin: 1.25rem;
+}
+
+.back-link {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+main .blog {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.blog header {
+  text-align: center;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #a9a9a9;
+}
+
+.blog-title {
+  margin-top: 0.5rem;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.sub-cat {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-cat div {
+  margin: 1rem;
+}
+
+.sub-cat-list {
+  background: var(--cat-list-color);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  width: fit-content;
+}
+
+.blog img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-desc {
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+/* FAQ */
+section {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px #000 solid;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.1rem;
+}
+
+.faq-icon{
+  transition: all 1s ease;
+}
+
+.answer p {
+  padding-top: 1.8rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  cursor: text;
+  transition: max-height 1.4s ease;
+}
+
+.show-answer {
+  max-height: 300px;
+}
+
+.icon-deg{
+  transform: rotate(180deg);
+  transition: all 1s ease;
+}
